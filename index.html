@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav id="nav" class="relative">
+      <div class="p-6 container mx-auto flex items-center justify-between">
+        <!-- logo -->
+        <div class="z-30">
+          <img src="./images/logo-bookmark.svg" alt="" id="logo" />
+        </div>
+        <!-- links -->
+        <div class="space-x-10 md:flex hidden items-center">
+          <a
+            href="#features"
+            class="text-grayishBlue hover:text-softRed tracking-widest uppercase"
+            >features</a
+          >
+          <a
+            href="#download"
+            class="text-grayishBlue hover:text-softRed tracking-widest uppercase"
+            >download</a
+          >
+          <a
+            href="#faq"
+            class="text-grayishBlue hover:text-softRed tracking-widest uppercase"
+            >faq</a
+          >
+          <button
+            class="tracking-widest bg-softRed text-white placeholder-opacity-30 px-8 rounded-lg py-2 border-softRed hover:bg-white hover:text-softRed border-2 uppercase focus:outline-none"
+          >
+            login
+          </button>
+        </div>
+
+        <!-- humberger button -->
+        <button
+          id="menu-btn"
+          class="md:hidden hamburger z-30 block focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div
+        id="menu"
+        class="inset-0 bg-veryDarkBlue text-white tracking-widest divide-gray-500 p-6 pt-28 fixed z-20 hidden h-screen min-h-screen w-full flex-col divide-y text-center uppercase opacity-90"
+      >
+        <div class="hover:text-softRed py-3">
+          <a href="#features">features</a>
+        </div>
+        <div class="hover:text-softRed py-3">
+          <a href="#download">download</a>
+        </div>
+        <div class="hover:text-softRed py-3">
+          <a href="#faq">faq</a>
+        </div>
+        <div class="hover:text-softRed py-3">
+          <a href="#login">login</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
